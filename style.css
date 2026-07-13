@@ -59,6 +59,7 @@ body {
   width: 128px;
   height: 128px;
   object-fit: cover;
+  object-position: center 15%;
   border-radius: 50%;
   border: 3px solid var(--bg);
   box-shadow: 0 0 0 1px var(--line);
@@ -119,7 +120,7 @@ h3:first-of-type {
   margin-top: 0;
 }
 
-p { margin: 0 0 14px; }
+p { margin: 0 0 14px; text-align: justify; text-justify: inter-word; }
 
 .fields { font-family: Arial, Helvetica, sans-serif; font-size: 0.95rem; color: var(--muted); }
 
@@ -152,6 +153,33 @@ p { margin: 0 0 14px; }
   width: 100%;
   height: 100%;
   border: 0;
+}
+
+/* Video link thumbnail (for non-embeddable videos) */
+.video-link {
+  display: block;
+  position: relative;
+  margin: 12px 0 4px;
+  border: 1px solid var(--line);
+  text-decoration: none;
+}
+
+.video-link img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.video-link .play-badge {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  background: rgba(0,0,0,0.75);
+  color: #fff;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 13px;
+  padding: 6px 12px;
+  border-radius: 4px;
 }
 
 /* Tables */
@@ -198,3 +226,14 @@ p { margin: 0 0 14px; }
 
 /* Footer */
 .site-footer {
+  border-top: 1px solid var(--line);
+  padding: 24px 0;
+  color: var(--muted);
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 0.85rem;
+}
+
+@media (max-width: 600px) {
+  .header-inner { flex-direction: column; text-align: center; }
+  .site-nav .container { justify-content: center; }
+}
