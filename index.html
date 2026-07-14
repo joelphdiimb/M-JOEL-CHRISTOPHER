@@ -26,6 +26,7 @@
       <a href="#research">Research</a>
       <a href="#teaching">Teaching</a>
       <a href="#awards">Awards</a>
+      <a href="#gallery">Gallery</a>
       <a href="#cv">CV</a>
       <a href="#contact">Contact</a>
     </div>
@@ -148,6 +149,111 @@
     </a>
   </section>
 
+  <section id="gallery">
+    <h2>Gallery</h2>
+    <p>Moments from conferences, paper presentations, and award ceremonies.</p>
+
+    <div class="gallery-grid">
+
+      <div class="tilt-card tilt-wide">
+        <div class="tilt-card-inner">
+          <img src="assets/gallery-cere-presentation-2025.jpg" alt="M Joel Christopher presenting his research paper at CERE 2025, IIM Indore" loading="lazy">
+          <div class="tilt-caption">
+            <span class="tilt-caption-title">Research Presentation</span>
+            <span class="tilt-caption-sub">CERE 2025 &middot; IIM Indore</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="tilt-card">
+        <div class="tilt-card-inner">
+          <img src="assets/award-photo.jpg" alt="M Joel Christopher receiving the Mirae Asset Scholar Award" loading="lazy">
+          <div class="tilt-caption">
+            <span class="tilt-caption-title">Mirae Asset Scholar Award</span>
+            <span class="tilt-caption-sub">IIM Bangalore &middot; 2025</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="tilt-card">
+        <div class="tilt-card-inner">
+          <img src="assets/gallery-icfmcf-2026-stage.jpg" alt="M Joel Christopher receiving the Best Paper Award, 1st Prize, Financial Markets track, at ICFMCF 2026, IIT Madras" loading="lazy">
+          <div class="tilt-caption">
+            <span class="tilt-caption-title">Best Paper Award &ndash; 1st Prize</span>
+            <span class="tilt-caption-sub">Track: Financial Markets</span>
+            <span class="tilt-caption-sub">ICFMCF 2026 &middot; IIT Madras</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="tilt-card">
+        <div class="tilt-card-inner">
+          <img src="assets/gallery-icfmcf-2026.jpg" alt="Best Paper Award certificate, 1st Prize, Financial Markets track, ICFMCF 2026, IIT Madras" loading="lazy">
+          <div class="tilt-caption">
+            <span class="tilt-caption-title">Best Paper Award &ndash; 1st Prize</span>
+            <span class="tilt-caption-sub">Track: Financial Markets</span>
+            <span class="tilt-caption-sub">ICFMCF 2026 &middot; IIT Madras</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="tilt-card">
+        <div class="tilt-card-inner">
+          <img src="assets/gallery-icfmcf-2025-stage.jpg" alt="M Joel Christopher receiving the Best Paper Award, 1st Prize, Financial Markets track, at ICFMCF 2025, IIT Kharagpur" loading="lazy">
+          <div class="tilt-caption">
+            <span class="tilt-caption-title">Best Paper Award &ndash; 1st Prize</span>
+            <span class="tilt-caption-sub">Track: Financial Markets</span>
+            <span class="tilt-caption-sub">ICFMCF 2025 &middot; IIT Kharagpur</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="tilt-card">
+        <div class="tilt-card-inner">
+          <img src="assets/gallery-icfmcf-2025.jpg" alt="Best Paper Presentation Award certificate, 1st Prize, Financial Markets track, ICFMCF 2025, IIT Kharagpur" loading="lazy">
+          <div class="tilt-caption">
+            <span class="tilt-caption-title">Best Paper Award &ndash; 1st Prize</span>
+            <span class="tilt-caption-sub">Track: Financial Markets</span>
+            <span class="tilt-caption-sub">ICFMCF 2025 &middot; IIT Kharagpur</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="tilt-card">
+        <div class="tilt-card-inner">
+          <img src="assets/gallery-rsfe-2025-first.jpg" alt="Best Research Paper Award certificate, First Prize, Financial Markets, Banks and Institutions track, RSFE 2025, IFMR GSB, KREA University" loading="lazy">
+          <div class="tilt-caption">
+            <span class="tilt-caption-title">Best Paper Award &ndash; 1st Prize</span>
+            <span class="tilt-caption-sub">Track: Financial Markets, Banks &amp; Institutions</span>
+            <span class="tilt-caption-sub">RSFE 2025 &middot; IFMR GSB, KREA University</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="tilt-card">
+        <div class="tilt-card-inner">
+          <img src="assets/gallery-rsfe-2026-second.jpg" alt="Best Research Paper Award certificate, Second Prize, ESG, CSR, Banks and other Finance track, RSFE 2026, IFMR GSB, KREA University" loading="lazy">
+          <div class="tilt-caption">
+            <span class="tilt-caption-title">Best Paper Award &ndash; 2nd Prize</span>
+            <span class="tilt-caption-sub">Track: ESG, CSR, Banks &amp; Other Finance</span>
+            <span class="tilt-caption-sub">RSFE 2026 &middot; IFMR GSB, KREA University</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="tilt-card">
+        <div class="tilt-card-inner">
+          <img src="assets/gallery-cere-runnerup-2025.jpg" alt="Best Paper Award Runner-Up certificate, CERE 2025, IIM Indore" loading="lazy">
+          <div class="tilt-caption">
+            <span class="tilt-caption-title">Best Paper Award &ndash; Runner-Up</span>
+            <span class="tilt-caption-sub">CERE 2025 &middot; IIM Indore</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
   <section id="cv">
     <h2>Curriculum Vitae</h2>
     <p>Download my full CV for details on education, publications, teaching, and industry experience.</p>
@@ -171,6 +277,40 @@
 
 <script>
   document.getElementById('year').textContent = new Date().getFullYear();
+</script>
+
+<script>
+  // Floating 3D tilt gallery
+  (function () {
+    var canHover = window.matchMedia('(hover: hover) and (pointer: fine)').matches;
+    var cards = document.querySelectorAll('.tilt-card-inner');
+    if (!canHover) return;
+
+    cards.forEach(function (card) {
+      var frame = null;
+
+      card.addEventListener('mousemove', function (e) {
+        var rect = card.getBoundingClientRect();
+        var x = e.clientX - rect.left;
+        var y = e.clientY - rect.top;
+        var cx = x / rect.width - 0.5;
+        var cy = y / rect.height - 0.5;
+        var rotateY = cx * 16;
+        var rotateX = cy * -16;
+
+        if (frame) cancelAnimationFrame(frame);
+        frame = requestAnimationFrame(function () {
+          card.style.transform =
+            'perspective(900px) rotateX(' + rotateX + 'deg) rotateY(' + rotateY + 'deg) scale3d(1.04,1.04,1.04)';
+        });
+      });
+
+      card.addEventListener('mouseleave', function () {
+        if (frame) cancelAnimationFrame(frame);
+        card.style.transform = 'perspective(900px) rotateX(0deg) rotateY(0deg) scale3d(1,1,1)';
+      });
+    });
+  })();
 </script>
 
 </body>
