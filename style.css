@@ -259,10 +259,10 @@ p { margin: 0 0 14px; text-align: justify; text-justify: inter-word; }
 .carousel-slide-inner {
   position: relative;
   width: 100%;
-  aspect-ratio: 16 / 9;
+  height: 420px;
   border-radius: 14px;
   overflow: hidden;
-  background: #0c0c0c;
+  background: var(--bg-soft);
   border: 1px solid var(--line);
   box-shadow:
     0 10px 24px -12px rgba(26, 26, 26, 0.35),
@@ -282,7 +282,7 @@ p { margin: 0 0 14px; text-align: justify; text-justify: inter-word; }
   inset: 0;
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  object-fit: contain;
   display: block;
   pointer-events: none;
   -webkit-user-drag: none;
@@ -362,7 +362,5 @@ p { margin: 0 0 14px; text-align: justify; text-justify: inter-word; }
 
 @media (max-width: 700px) {
   .carousel-slide { width: 86vw; }
-  .carousel-arrow { display: none; }
-}
-
-/* Footer */
+  .carousel-slide-inner { height: 260px; }
+  .carou
