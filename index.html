@@ -8,7 +8,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,400&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css?v=7">
+<link rel="stylesheet" href="style.css?v=8">
 </head>
 <body>
 
@@ -291,13 +291,31 @@
 </main>
 
 <footer class="site-footer">
-  <div class="container">
+  <div class="container footer-row">
     <p>&copy; <span id="year"></span> M Joel Christopher</p>
+    <p class="visit-counter" id="visit-counter"></p>
   </div>
 </footer>
 
 <script>
   document.getElementById('year').textContent = new Date().getFullYear();
+</script>
+
+<script>
+  // Simple, unobtrusive page-view counter (CountAPI, no login/cookies required)
+  (function () {
+    var el = document.getElementById('visit-counter');
+    if (!el) return;
+    fetch('https://api.countapi.xyz/hit/joelphdiimb-mjoelchristopher/site-views')
+      .then(function (r) { return r.json(); })
+      .then(function (data) {
+        if (!data || typeof data.value !== 'number') return;
+        var formatted = data.value.toLocaleString();
+        el.innerHTML = '<span class="count-value">' + formatted + '</span> page views';
+        el.classList.add('is-ready');
+      })
+      .catch(function () { /* fail silently, no counter shown */ });
+  })();
 </script>
 
 <script>
